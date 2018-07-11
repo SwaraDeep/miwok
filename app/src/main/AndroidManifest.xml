@@ -41,7 +41,6 @@
         <activity
             android:name=".ColorsActivity"
             android:label="Colors" />
-        <activity android:name=".NumbersClickListener"></activity>
     </application>
 
 </manifest>
