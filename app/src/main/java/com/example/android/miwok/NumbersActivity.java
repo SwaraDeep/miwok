@@ -11,10 +11,9 @@ public class NumbersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_numbers);
+        setContentView(R.layout.word_list);
 
-
-        ArrayList<com.example.android.miwok.Word> words = new ArrayList<com.example.android.miwok.Word>();
+        ArrayList<Word> words = new ArrayList<Word>();
 
         words.add(new com.example.android.miwok.Word("lutti", "one"));
         words.add(new com.example.android.miwok.Word("otiiko", "two"));

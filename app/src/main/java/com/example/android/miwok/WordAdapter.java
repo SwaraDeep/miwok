@@ -9,14 +9,14 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class WordAdapter extends ArrayAdapter<com.example.android.miwok.Word> {
+public class WordAdapter extends ArrayAdapter<Word> {
     /*
         @NonNull
         @Override
         public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
             return super.getView(position, convertView, parent);
         }*/
-    public WordAdapter(Context context, ArrayList<com.example.android.miwok.Word> pWords) {
+    public WordAdapter(Context context, ArrayList<Word> pWords) {
         super(context, 0, pWords);
     }
 
@@ -31,7 +31,7 @@ public class WordAdapter extends ArrayAdapter<com.example.android.miwok.Word> {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
-        com.example.android.miwok.Word local_word = getItem(position);
+        Word local_word = getItem(position);
         TextView miwokTextView = (TextView) listItemView.findViewById(R.id.miwok_text_view);
         miwokTextView.setText(local_word.getMiwokTranslation());
         TextView defaultTextView = (TextView) listItemView.findViewById(R.id.default_text_view);

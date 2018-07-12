@@ -1,4 +1,4 @@
-
+package com.example.android.miwok;
 
 /**
  * {@link Word} represents a vocabulary word that the user wants to learn.
@@ -23,7 +23,7 @@ public class Word {
      *                           (such as English)
      * @param miwokTranslation   is the word in the Miwok language
      */
-    public Word(String defaultTranslation, String miwokTranslation) {
+    public Word(String miwokTranslation, String defaultTranslation) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
     }

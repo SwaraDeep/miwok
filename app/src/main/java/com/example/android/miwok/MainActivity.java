@@ -39,5 +39,32 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(numbers);
             }
         });
+
+        final TextView colors = (TextView) findViewById(R.id.colors);
+        colors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent color = new Intent(MainActivity.this, ColorsActivity.class);
+                startActivity(color);
+            }
+        });
+
+        final TextView family = (TextView) findViewById(R.id.family);
+        family.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, FamilyActivity.class);
+                startActivity(i);
+            }
+        });
+
+        final TextView phrases = (TextView) findViewById(R.id.phrases);
+        phrases.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, PhrasesActivity.class);
+                startActivity(i);
+            }
+        });
     }
 }
