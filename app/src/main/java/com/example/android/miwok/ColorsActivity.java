@@ -15,14 +15,14 @@ public class ColorsActivity extends AppCompatActivity {
 
         ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new com.example.android.miwok.Word("weṭeṭṭi", "red"));
-        words.add(new com.example.android.miwok.Word("chokokki", "green"));
-        words.add(new com.example.android.miwok.Word("ṭakaakki", "brown"));
-        words.add(new com.example.android.miwok.Word("ṭopoppi", "gray"));
-        words.add(new com.example.android.miwok.Word("kululli", "black"));
-        words.add(new com.example.android.miwok.Word("kelelli", "white"));
-        words.add(new com.example.android.miwok.Word("ṭopiisә", "dusty yellow"));
-        words.add(new com.example.android.miwok.Word("chiwiiṭә", "mustard yellow"));
+        words.add(new com.example.android.miwok.Word("weṭeṭṭi", "red", R.drawable.color_red));
+        words.add(new com.example.android.miwok.Word("chokokki", "green", R.drawable.color_green));
+        words.add(new com.example.android.miwok.Word("ṭakaakki", "brown", R.drawable.color_brown));
+        words.add(new com.example.android.miwok.Word("ṭopoppi", "gray", R.drawable.color_gray));
+        words.add(new com.example.android.miwok.Word("kululli", "black", R.drawable.color_black));
+        words.add(new com.example.android.miwok.Word("kelelli", "white", R.drawable.color_white));
+        words.add(new com.example.android.miwok.Word("ṭopiisә", "dusty yellow", R.drawable.color_dusty_yellow));
+        words.add(new com.example.android.miwok.Word("chiwiiṭә", "mustard yellow", R.drawable.color_mustard_yellow));
         //words.add(new com.example.android.miwok.Word("wo’e", "nine"));
         //words.add(new com.example.android.miwok.Word("na’aacha", "ten"));
 

@@ -16,6 +16,8 @@ public class Word {
      */
     private String mMiwokTranslation;
 
+    private int mImageResourceId;
+
     /**
      * Create a new Word object.
      *
@@ -26,6 +28,12 @@ public class Word {
     public Word(String miwokTranslation, String defaultTranslation) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
+    }
+
+    public Word(String miwokTranslation, String defaultTranslation, int resId) {
+        mMiwokTranslation = miwokTranslation;
+        mDefaultTranslation = defaultTranslation;
+        mImageResourceId = resId;
     }
 
     /**
@@ -42,4 +50,7 @@ public class Word {
         return mMiwokTranslation;
     }
 
+    public int getImageResourceId() {
+        return mImageResourceId;
+    }
 }

@@ -15,16 +15,16 @@ public class NumbersActivity extends AppCompatActivity {
 
         ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new com.example.android.miwok.Word("lutti", "one"));
-        words.add(new com.example.android.miwok.Word("otiiko", "two"));
-        words.add(new com.example.android.miwok.Word("tolookosu", "three"));
-        words.add(new com.example.android.miwok.Word("oyyisa", "four"));
-        words.add(new com.example.android.miwok.Word("massokka", "five"));
-        words.add(new com.example.android.miwok.Word("temmokka", "six"));
-        words.add(new com.example.android.miwok.Word("kenekaku", "seven"));
-        words.add(new com.example.android.miwok.Word("kawinta", "eight"));
-        words.add(new com.example.android.miwok.Word("wo’e", "nine"));
-        words.add(new com.example.android.miwok.Word("na’aacha", "ten"));
+        words.add(new com.example.android.miwok.Word("lutti", "one", R.drawable.number_one));
+        words.add(new com.example.android.miwok.Word("otiiko", "two", R.drawable.number_two));
+        words.add(new com.example.android.miwok.Word("tolookosu", "three", R.drawable.number_three));
+        words.add(new com.example.android.miwok.Word("oyyisa", "four", R.drawable.number_four));
+        words.add(new com.example.android.miwok.Word("massokka", "five", R.drawable.number_five));
+        words.add(new com.example.android.miwok.Word("temmokka", "six", R.drawable.number_six));
+        words.add(new com.example.android.miwok.Word("kenekaku", "seven", R.drawable.number_seven));
+        words.add(new com.example.android.miwok.Word("kawinta", "eight", R.drawable.number_eight));
+        words.add(new com.example.android.miwok.Word("wo’e", "nine", R.drawable.number_nine));
+        words.add(new com.example.android.miwok.Word("na’aacha", "ten", R.drawable.number_ten));
 
         //int index;
 
