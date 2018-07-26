@@ -21,7 +21,7 @@
         android:layout_width="@dimen/list_item_height"
         android:layout_height="@dimen/list_item_height" />
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/text_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,27 +29,43 @@
         android:orientation="vertical"
         android:paddingLeft="16dp">
 
-        <TextView
-            android:id="@+id/miwok_text_view"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="bottom"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            tools:text="lutti" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/default_text_view"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_gravity="top"
-            android:layout_weight="1"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            tools:text="one" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/miwok_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="lutti" />
+
+            <TextView
+                android:id="@+id/default_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                tools:text="one" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@android:drawable/ic_media_play" />
+    </RelativeLayout>
 </LinearLayout>
